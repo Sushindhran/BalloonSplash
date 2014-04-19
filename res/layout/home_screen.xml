@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:background="@drawable/background_sky"
+    >
+
+    <TextView
+        android:id="@+id/gameName"        
+        android:textColor="@color/red"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Balloon Splash"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        
+    <TextView
+        android:id="@+id/start"
+        android:textColor="#FFFFFF"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gameName"
+  		android:onClick="onClick"      
+        android:text="Start Game"/>
+    
+    <TextView
+        android:id="@+id/rules"
+        android:textColor="#FFFFFF"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Rules" 
+        android:clickable="true"
+        android:onClick="onClick"/>
+    
+    <TextView
+        android:id="@+id/highScores"
+        android:textColor="#FFFFFF"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rules"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="High Scores"
+        android:clickable="true"
+        android:onClick="onClick"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highScores"
+        android:layout_marginTop="58dp"
+        android:layout_toLeftOf="@+id/start"
+        android:src="@drawable/shoot_dark" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/highScores"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/highScores"
+        android:src="@drawable/shoot_light" />
+ 
+</RelativeLayout>
